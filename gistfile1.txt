@@ -1,0 +1,66 @@
+//Dado un caracter vocal presentar su respectivo valor ascii
+Proceso valorAscii
+	Definir car,A,E,I,U como caracter;
+	car=""
+	Escribir "Ingrese una vocal";
+	Leer car;
+	Segun car Hacer
+		"A":
+			Escribir "el valor Ascii de A es 65 ";
+		"E":
+			Escribir "el valor Ascii de E es 69 ";
+		"I":
+			Escribir "el valor Ascii de I es 73 ";
+		"O":
+			Escribir "el valor Ascii de O es 79";
+		"U":
+			Escribir "el valor Ascii de U es 85 ";
+		"a":
+			Escribir "el valor Ascii de a es 97 ";
+		"e":
+			Escribir "el valor Ascii de e es 101 ";
+		"i":
+			Escribir "el valor Ascii de i es 105 ";
+		"o":
+			Escribir "el valor Ascii de o es 111";
+		"u":
+			Escribir "el valor Ascii de u es 117"
+		De Otro Modo:
+			Escribir "No ingreso una vocal"
+	Fin Segun
+FinProceso
+
+
+
+Algoritmo elBaraton
+	Definir CV, PV,CP,MP,MO,GF Como Real
+	EscribiR "Ingrese la materia prima"
+	Leer MP
+	Escribir "Ingrese la clave"
+	Leer CV
+	Si CV=3 o CV=4 Entonces
+		MO=0.75*MP
+	SiNo
+		Si CV=1 o CV=5 Entonces
+			MO=0.80*MP
+		SiNo
+			MO=0.85*MP
+		FinSi
+	FinSi
+	Si CV=2 o CV=5 Entonces
+		GF=0.30*MP
+	SiNo
+		Si CV=3 o CV=6 Entonces
+			GF=0.35*MP
+		SiNo
+			GF=0.28*MP
+		FinSi
+	FinSi
+	CP=MP+MO+GF
+	PV=CP+0.45*CP
+	Escribir CP
+	Escribir "" PV
+	//iva despues del descuento
+	
+FinAlgoritmo
+
