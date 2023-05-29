@@ -64,3 +64,37 @@ Algoritmo elBaraton
 	
 FinAlgoritmo
 
+
+
+
+Arreglar
+
+
+Proceso CantidadViajes
+	Definir CV, pasaje, recorrido, Cmenor100, Cmayor100, ACmayor100,ACmenor100,CPM Como real
+	Escribir" Ingrese la cantidad de viajes"
+	Leer CV
+	Escribir "Ingrese el pasaje "
+	Leer pasaje 
+	Escribir "Ingrese el recorrido"
+	Leer recorrido
+	Cmenor100=0
+	Cmayor100=0
+	ACmayor100=0
+	ACmenor100=0
+	Mientras CV>0 Hacer
+		sI recorrido <=100 Entonces
+			Cmenor100=Cmenor100+1
+			ACmenor100=ACmenor100+pasaje
+		SiNo
+			Cmayor100=Cmayor100+1
+			ACmayor100=ACmayor100+PASAJE+0.20*PASAJE
+			
+		FinSi
+		CV=CV-1
+	FinMientras
+	Escribir CPM Cmenor100, ACmenor100
+	Escribir CPM
+	
+FinProceso
+
